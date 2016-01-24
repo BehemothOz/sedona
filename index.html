@@ -1,12 +1,148 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
+    <head>
+        <meta charset="utf-8">
+        <title>HTML Academy: Седона</title>
+ 	</head>
+  	<body>
+		<div class="container">
+			<!-- main header -->
+			<header class="main-header">
+				<nav class="main-navigation">
+					<ul>
+					    <li><a href="#">Информация</a></li>
+					    <li><a href="#">Фото и видео</a></li>
+						<li><a href="#">Карта Штата</a></li>
+						<li><a href="#">Гостиницы</a></li>
+					</ul>
+				</nav>
+			</header>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive">Базовый HTML и CSS</a>».</p>
+			<!-- main content -->
+			<main>
+				<!-- jumbotron -->
+				<section class="jumbotron">
+					<div class="jumbotron-wrapper-text">
+						<p class="top-text">Welcome to the gorgeous</p>
+						<h1 class="main-title">Sedona</h1>
+						<q class="bottom-text">Because the grand canyon sucks!</q>
+					</div>
+				</section>
 
-  </body>
+				<!-- five reason section-->
+				<section class="reason">
+					<div class="reason-wrapper-title">
+						<h1 class="reason-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+						<p class="reason-bottom-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+					</div>
+
+					<!-- first reason -->
+					<div class="reason-one-block">
+						<div class="row clearfix">
+							<div class="reason-one item">
+								<h2 class="reason-one-title item-title">Настоящий городок</h2>
+								<p class="reason-number item-number">№1</p>
+								<p class="reason-one-text item-text">Седона — не аттракцион для туристов, там течет своя жизнь</p>
+							</div>
+							<div class="reason-one-img">
+								<img src="http://placehold.it/800x255" alt="sedona.jpg" width="800" height="255">
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- components -->
+				<div class="components">
+					<div class="row clearfix">
+						<div class="component item">
+							<i class="icon"></i>
+							<b class="component-title">Жилье</b>
+							<p class="component-text item-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+						</div>
+						<div class="component item">
+							<i class="icon"></i>
+							<b class="component-title">Еда</b>
+							<p class="component-text item-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+						</div>
+						<div class="component item">
+							<i class="icon"></i>
+							<b class="component-title">Сувениры</b>
+							<p class="component-text item-text">Не только китайского, но и местного производства!</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- second reason -->
+				<div class="reason-two-block">
+					<div class="row clearfix">
+						<div class="reason-two-img">
+							<img src="http://placehold.it/800x255" alt="sedona.jpg" width="800" height="255">
+						</div>
+						<div class="reason-two item">
+							<h2 class="reason-two-title item-title">Там есть мост дьявола</h2>
+							<p class="reason-number item-number">№2</p>
+							<p class="reason-two-text item-text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- other reason -->
+				<div class="other-reason-block">
+					<div class="row clearfix">
+						<div class="other-reason item">
+							<h2 class="other-reason-title item-title">Небольшая площадь</h2>
+							<p class="other-reason-number item-number">№3</p>
+							<p class="other-reason-text item-text">Все достопримечательности находятся очень близко</p>
+						</div>
+						<div class="other-reason item">
+							<h2 class="other-reason-title item-title">Красивая дорога</h2>
+							<p class="other-reason-number item-number">№4</p>
+							<p class="other-reason-text item-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+						</div>
+						<div class="other-reason item">
+							<h2 class="other-reason-title item-title">Мало туристов</h2>
+							<p class="other-reason-number item-number">№5</p>
+							<p class="other-reason-text item-text">Большинство едет в гранд каньон и толпится там</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- search -->
+				<section class="search-block">
+					<div class="title-search-block">
+						<p class="top-title">Заинтересовались?</p>
+						<p class="bottom-title">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+					</div>
+					<div class="map-form-block">
+						<form class="main-form" action="#" method="post">
+							<h3 class="title-form">Поиск гостиницы в Седоне</h3>
+							<label>Дата заезда: <input type="date" name="visit" placeholder="24 апреля 2014" required></label> 
+							<label>Дата выезда: <input type="date" name="departure" placeholder="4 июля 2014" required></label> 
+							<label>Взрослые: <input type="number" value="2"></label> 
+							<label>Дети: <input type="number" value="0"></label> 
+							<button type="submit">Найти</button> 
+						</form>
+					</div>
+				</section>
+			</main>
+			
+			<!-- main footer -->
+			<footer class="main-footer">
+				<div class="row clearfix">
+					<div class="footer-item hashtag">
+						<p>#visitsedona</p>
+					</div>
+					<div class="footer-item social-btn">
+						<a href="#" class="btn btn-twitter"></a>
+						<a href="#" class="btn btn-fb"></a>
+						<a href="#" class="btn btn-youtube"></a>
+					</div>
+					<div class="footer-item copyright">
+						<span>Website by</span>
+						<img src="http://placehold.it/100x50" alt="copyright" width="100" height="50">
+					</div>
+				</div>
+			</footer>
+		</div>			
+    </body>
 </html>
