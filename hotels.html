@@ -22,140 +22,139 @@
 			</header>
 			
 			<!-- main content -->
-			<main>
-				<section class="choice-block">
-					<form class="form-choice" action="#" method="post">
-						<div class="row clearfix">
-							<div class="choice-infrastructure">
-								<p class="choice-title">Инфраструктура</p>
+			<section class="choice-block">
+				<form class="form-choice" action="#" method="post">
+					<div class="row clearfix">
+						<div class="choice-infrastructure">
+							<p class="choice-title">Инфраструктура</p>
 
-								<input type="checkbox"	name="infrast" id="infrast1" value="infrast1" checked>
-								<label for="infrast1">Бассейн</label>
+							<input type="checkbox"	name="infrast" id="infrast1" value="infrast1" checked>
+							<label for="infrast1">Бассейн</label>
 
-								<input type="checkbox"	name="infrast" id="infrast2" value="infrast2">
-								<label for="infrast2">Парковка</label>
+							<input type="checkbox"	name="infrast" id="infrast2" value="infrast2">
+							<label for="infrast2">Парковка</label>
 
-								<input type="checkbox"	name="infrast" id="infrast3" value="infrast3">
-								<label for="infrast3">Wifi</label>
+							<input type="checkbox"	name="infrast" id="infrast3" value="infrast3">
+							<label for="infrast3">Wifi</label>
+						</div>
+						<div class="choice-housing">
+							<p class="choice-title">Тип жилья</p>
+
+							<input type="checkbox"	name="housing" id="housing1" value="housing1" checked>
+							<label for="housing1">Гостиница</label>
+
+							<input type="checkbox"	name="housing" id="housing2" value="housing2" checked>
+							<label for="housing2">Мотель</label>
+
+							<input type="checkbox"	name="housing" id="housing3" value="housing3" checked>
+							<label for="housing3">Апартаменты</label>
+						</div>
+						<div class="choice-price">
+							<p class="choice-title">Стоимость в сутки (р):</p>
+							<div class="price-control">
+								От <input class="min-price" type="text" value="0">
+								До <input class="max-price" type="text" value="3000">
 							</div>
-							<div class="choice-housing">
-								<p class="choice-title">Тип жилья</p>
-
-								<input type="checkbox"	name="housing" id="housing1" value="housing1" checked>
-								<label for="housing1">Гостиница</label>
-
-								<input type="checkbox"	name="housing" id="housing2" value="housing2" checked>
-								<label for="housing2">Мотель</label>
-
-								<input type="checkbox"	name="housing" id="housing3" value="housing3" checked>
-								<label for="housing3">Апартаменты</label>
+							<div class="range-toggle">
+								<div class="range"></div>
+								<div class="toggle min-toggle"></div>
+								<div class="toggle max-toggle"></div>
 							</div>
-							<div class="choice-price">
-								<p class="choice-title">Стоимость в сутки (р):</p>
-								<div class="price-control">
-									От <input class="min-price" type="text" value="0">
-									До <input class="max-price" type="text" value="3000">
-								</div>
-								<div class="range-toggle">
-									<div class="range"></div>
-									<div class="toggle min-toggle"></div>
-									<div class="toggle max-toggle"></div>
-								</div>
-								<div class="button-form">
-									<button type="submit">Показать</button>
-								</div>
+							<div class="button-form">
+								<button type="submit">Показать</button>
 							</div>
 						</div>
-					</form>
-				</section>
+					</div>
+				</form>
+			</section>
 
-				<!-- result block -->
-				<div class="result-block">
-					<div class="sorting clearfix">
-						<div class="sorting-type">
-							<span class="sorting-result">Найдено: 3</span>
-							<span class="sorting-list">Сортировка
-								<a class="active" href="#">По цене</a>
-								<a href="#">По типу</a>
-								<a href="#">По рейтингу</a>
-							</span>
-						</div>
-						<div class="pointer-block">
-							<i class="pointer pointer-up"></i>
-							<i class="pointer pointer-down"></i>
-						</div>
+			<!-- result block -->
+			<div class="result-block">
+				<div class="sorting clearfix">
+					<div class="sorting-type">
+						<span class="sorting-result">Найдено: 3</span>
+						<span class="sorting-list">Сортировка
+							<a class="active" href="#">По цене</a>
+							<a href="#">По типу</a>
+							<a href="#">По рейтингу</a>
+						</span>
+					</div>
+					<div class="pointer-block">
+						<i class="pointer pointer-up"></i>
+						<i class="pointer pointer-down"></i>
 					</div>
 				</div>
-				
-				<!-- first result block -->
-				<div class="first-result result clearfix">
-					<div class="about-result">
-						<figure>
-							<img src="http://placehold.it/135x90" alt="hotels" width="135" height="90">
-						</figure>
-						<div class="info-adout-result">
-							<b class="info-title">Amara Resort & Spa</b>
-							<p class="info-text">Гостиница <span>от 3500 р.</span></p>
-							<a class="btn-info btn-detailed" href="#">Подбробнее</a>
-							<a class="btn-info btn-reserv" href="">Забронировать</a>
-						</div>
-					</div>
-					<div class="assessment">
-						<div class="stars">
-							<i class="star"></i>
-						</div>
-						<div class="rating">
-							Рейтинг: 8,5
-						</div>
+			</div>
+			
+			<!-- first result block -->
+			<div class="first-result result clearfix">
+				<div class="about-result">
+					<figure>
+						<img src="http://placehold.it/135x90" alt="hotels" width="135" height="90">
+					</figure>
+					<div class="info-adout-result">
+						<b class="info-title">Amara Resort & Spa</b>
+						<p class="info-text">Гостиница <span>от 3500 р.</span></p>
+						<a class="btn-info btn-detailed" href="#">Подбробнее</a>
+						<a class="btn-info btn-reserv" href="">Забронировать</a>
 					</div>
 				</div>
+				<div class="assessment">
+					<div class="stars">
+						<i class="star"></i>
+					</div>
+					<div class="rating">
+						Рейтинг: 8,5
+					</div>
+				</div>
+			</div>
 
-				<!-- second result block -->
-				<div class="second-result result clearfix">
-					<div class="about-result">
-						<figure>
-							<img src="http://placehold.it/135x90" alt="hotels" width="135" height="90">
-						</figure>
-						<div class="info-adout-result">
-							<b class="info-title">Desert Quail Inn</b>
-							<p class="info-text">Мотель <span>от 2000 р.</span></p>
-							<a class="btn-info btn-detailed" href="#">Подробнее</a>
-							<a class="btn-info btn-reserv" href="">Забронировать</a>
-						</div>
-					</div>
-					<div class="assessment">
-						<div class="stars">
-							<i class="star"></i>
-						</div>
-						<div class="rating">
-							Рейтинг: 8,9
-						</div>
+			<!-- second result block -->
+			<div class="second-result result clearfix">
+				<div class="about-result">
+					<figure>
+						<img src="http://placehold.it/135x90" alt="hotels" width="135" height="90">
+					</figure>
+					<div class="info-adout-result">
+						<b class="info-title">Desert Quail Inn</b>
+						<p class="info-text">Мотель <span>от 2000 р.</span></p>
+						<a class="btn-info btn-detailed" href="#">Подробнее</a>
+						<a class="btn-info btn-reserv" href="">Забронировать</a>
 					</div>
 				</div>
+				<div class="assessment">
+					<div class="stars">
+						<i class="star"></i>
+					</div>
+					<div class="rating">
+						Рейтинг: 8,9
+					</div>
+				</div>
+			</div>
 
-				<!-- third result block -->
-				<div class="third-result result clearfix">
-					<div class="about-result">
-						<figure>
-							<img src="http://placehold.it/135x90" alt="hotels" width="135" height="90">
-						</figure>
-						<div class="info-adout-result">
-							<b class="info-title">Villas at Poco Diablo</b>
-							<p class="info-text">Апартаменты <span>от 4000 р.</span></p>
-							<a class="btn-info btn-detailed" href="#">Подробнее</a>
-							<a class="btn-info btn-reserv" href="">Забронировать</a>
-						</div>
-					</div>
-					<div class="assessment">
-						<div class="stars">
-							<i class="star"></i>
-						</div>
-						<div class="rating">
-							Рейтинг: 9,2
-						</div>
+			<!-- third result block -->
+			<div class="third-result result clearfix">
+				<div class="about-result">
+					<figure>
+						<img src="http://placehold.it/135x90" alt="hotels" width="135" height="90">
+					</figure>
+					<div class="info-adout-result">
+						<b class="info-title">Villas at Poco Diablo</b>
+						<p class="info-text">Апартаменты <span>от 4000 р.</span></p>
+						<a class="btn-info btn-detailed" href="#">Подробнее</a>
+						<a class="btn-info btn-reserv" href="">Забронировать</a>
 					</div>
 				</div>
-			</main>
+				<div class="assessment">
+					<div class="stars">
+						<i class="star"></i>
+					</div>
+					<div class="rating">
+						Рейтинг: 9,2
+					</div>
+				</div>
+			</div>
+		
 
 			<!-- main footer -->
 			<footer class="main-footer">
