@@ -1,0 +1,22 @@
+body{
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 16px;
+	color: #000;
+	background-color: #fff;
+}
+
+.reason .reason-title{
+	font-family: "PT Sans Bold", Arial, sans-serif;
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.item .item-title{
+	font-family: "PT Sans Bold", Arial, sans-serif;
+	font-size: 21px;
+	line-height: 21px;
+	font-weight: bold;
+	text-transform: uppercase;	
+}
