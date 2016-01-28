@@ -13,12 +13,17 @@ body{
 	padding: 0 10px;
 }
 
+.row::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
 /* header */
 
 .main-header{
 	position: relative;
 	padding: 15px 0;
-	
 }
 
 .main-header .logo-block{
@@ -65,14 +70,41 @@ body{
 	color: #000;
 }
 
+/* jumbotron */
+
+.jumbotron {
+	height: 510px;
+}
+
 /* five reason section */
 
+.reason-wrapper-title{
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+}
+
 .reason .reason-title{
-	font-family: "PT Sans Bold", Arial, sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: bold;
 	text-transform: uppercase;
+}
+
+.reason-bottom-text{
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 26px;
+	color: #333;
+}
+
+/* common style for reason section */
+	
+.item{
+	width: 33%;
+	float: left;
+	text-align: center;
 }
 
 .item .item-title{
@@ -82,3 +114,11 @@ body{
 	font-weight: bold;
 	text-transform: uppercase;	
 }
+
+.item .item-text{
+	font-size: 14px;
+	line-height: 21px;
+}
+
+/* /end common style for reason section */
+
