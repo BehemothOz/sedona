@@ -1,16 +1,18 @@
-* box-sizing: border-box;
+* { box-sizing: border-box; }
 
 body{
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 16px;
 	color: #000;
-	background-color: #fff;
+	background-color: #f2f2f2;
+	text-transform: uppercase;
 }
 
 .container{
 	max-width: 1200px;
+	min-width: 760px;
 	margin: 0 auto;
-	padding: 0 10px;
+	box-shadow: 0 0 21px -3px rgba(0,0,0,0.4);
 }
 
 .row::after{
@@ -24,6 +26,7 @@ body{
 .main-header{
 	position: relative;
 	padding: 15px 0;
+	background-color: #fff;
 }
 
 .main-header .logo-block{
@@ -44,11 +47,9 @@ body{
 	display: inline-block;
 	vertical-align: top;
 	width: 20%;
-	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 14px;
 	line-height: 26px;
 	font-weight: bold; 
-	text-transform: uppercase;
 }
 
 .main-navigation li:first-of-type,
@@ -70,26 +71,37 @@ body{
 	color: #000;
 }
 
+/* /end header */
+
+
 /* jumbotron */
 
 .jumbotron {
 	height: 510px;
 }
 
+/* /end jumbotron */
+
+
 /* five reason section */
+
+.reason{
+	background-color: #fff;
+}
 
 .reason-wrapper-title{
 	width: 50%;
+	padding: 40px 0;
 	margin: 0 auto;
 	text-align: center;
 }
 
 .reason .reason-title{
+	margin-bottom: 20px;
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: bold;
-	text-transform: uppercase;
 }
 
 .reason-bottom-text{
@@ -102,8 +114,9 @@ body{
 /* common style for reason section */
 	
 .item{
-	width: 33%;
+	width: 33.333333%;
 	float: left;
+	padding: 4% 6%;
 	text-align: center;
 }
 
@@ -112,13 +125,264 @@ body{
 	font-size: 21px;
 	line-height: 21px;
 	font-weight: bold;
-	text-transform: uppercase;	
+}
+
+.item .item-number{
+	font-size: 14px;
+	line-height: 24px;
 }
 
 .item .item-text{
 	font-size: 14px;
 	line-height: 21px;
+	color: #333333;
 }
 
 /* /end common style for reason section */
 
+/* first reason and second reason */ 
+
+.reason-one-block,
+.reason-two-block{
+	height: 256px;
+	overflow: hidden;
+}
+
+.reason-one,
+.reason-two{
+	color: #fff;
+	background-color: #81b3d2;
+}
+
+.reason-one .reason-one-text,
+.reason-two .reason-two-text{
+	color: #fff;
+}
+
+.reason-one-img{
+	width: 66.666666%;
+	float: right;
+	overflow: hidden;
+}
+
+.reason-two-img{
+	width: 66.666666%;
+	float: left;
+	overflow: hidden;
+}
+
+.reason-two{
+	float: right;
+}
+
+
+/* /end first reason and second reason */ 
+
+
+/* components */
+
+.icon{
+	display: inline-block;
+	vertical-align: top;
+	width: 75px;
+	height: 75px;
+	margin-bottom: 15px;
+}
+
+.icon-housing{
+	background: url(../img/icon_component_1.png) no-repeat center;
+}
+
+.icon-food{
+	background: url(../img/icon_component_2.png) no-repeat center;
+}
+
+ .icon-memento{
+	background: url(../img/icon_component_3.png) no-repeat center;
+ }
+
+/* /end components */
+
+.other-reason-block{
+	background-color: #eee;
+}
+
+/* /end five reason section */
+
+
+/* search block */
+
+.search-block{
+	background-color: #fff;
+}
+
+.wrapper-search-block{
+	width: 50%;
+	padding-top: 20px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.search-block .top-title{
+	font-family: "PT Sans Bold", Arial, sans-serif;
+	font-size: 30px;
+	line-height: 24px;
+	font-weight: bold;
+}
+
+.search-block .bottom-title{
+	margin-bottom: 35px;
+	font-size: 14px;
+	line-height: 24px;
+	color: #333;
+}
+
+.search-block .btn-call-form{
+	position: relative;
+	display: block;
+	width: 570px;
+	padding: 30px;
+	font-family: "PT Sans Bold", Arial, sans-serif;
+	font-size: 21px;
+	line-height: 26px;
+	color: #fff;
+	background-color: #766357;
+	text-decoration: none;
+}
+
+/* main form */
+
+.main-form{
+	position: absolute;
+	width: 570px;
+	padding: 55px 45px;
+	text-align: right;
+	background-color: #fff;
+}
+
+.main-form label{
+	display: inline-block;
+	font-family: "PT Sans Bold", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: bold;
+}
+
+.main-form input{
+	padding: 10px 15px;
+	background-color: #f2f2f2;
+	border: none;
+}
+
+.main-form input[type="text"]{
+	width: 345px;
+	margin-left: 20px;
+	margin-bottom: 30px;
+}
+
+.main-form input[type="number"]{
+	width: 115px;
+	text-align: center;
+	margin-left: 48px;
+}
+
+.wrapper-label-number{
+	margin-bottom: 55px;
+}
+
+.label-adult{
+	float: left;
+}
+
+.label-child{
+	float: right;
+}
+
+.main-form button{
+	display: block;
+	width: 100%;
+	padding: 17px 0;
+	font-family: "PT Sans Bold", Arial, sans-serif;
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+	color: #fff;
+	background-color: #81b3d2;
+	text-transform: uppercase;
+	border: none;
+}
+
+
+/* /and main form */
+
+/* /end search block */
+
+
+/* map block */
+
+.map-block{
+	height: 475px;
+}
+
+/* /end map block */
+
+
+/* main footer */
+
+.main-footer{
+	padding: 35px 0;
+	background-color: #fff;
+}
+
+.footer-item {
+	width: 33.333333%;
+	float: left;
+	text-align: center;
+}
+
+.hashtag p{
+	margin: 0;
+	font-family: "PT Sans Bold", Arial, sans-serif;;
+	font-size: 21px;
+	line-height: 48px; /* так нельзя, но по-другому не получилось */
+	font-weight: bold;
+}
+
+.social-btn ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.social-btn li{
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 15px;
+}
+
+.social-btn a{
+	display: block;
+	width: 48px;
+	height: 48px;
+	background-color: #81b3d2;
+}
+
+.copyright{
+	display: table;
+	padding-top: 5px; /* или такое вот вырванивание по вертикали */
+}
+
+.copyright span,
+.copyright img{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.copyright span{
+	padding-right: 10px;
+	font-size: 14px;
+	line-height: 26px;
+	text-align: right;
+}
+
+/* /end main footer */
