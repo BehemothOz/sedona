@@ -386,3 +386,22 @@ body{
 }
 
 /* /end main footer */
+
+
+
+/* *** hotel page ***  */
+
+/* choice-block */
+
+/* /end choice-block */
+
+.about-result{
+	width: 50%;
+	float: left;
+}
+
+.assessment{
+	width: 50%;
+	float: right;
+	text-align: right;
+}
