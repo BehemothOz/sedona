@@ -28,43 +28,63 @@
 				<form class="form-choice" action="#" method="post">
 					<div class="row">
 						<div class="choice-infrastructure">
-							<p class="choice-title">Инфраструктура</p>
+							<fieldset>
+								<legend class="choice-title">Инфраструктура</legend>
+								<ul>
+									<li>
+										<input type="checkbox"	name="infrastructure" id="pool" value="pool" checked>
+										<label for="pool">Бассейн</label>
+									</li>
 
-							<input type="checkbox"	name="infrastructure" id="pool" value="pool" checked>
-							<label for="pool">Бассейн</label>
+									<li>
+										<input type="checkbox"	name="infrastructure" id="parcing" value="parcing">
+										<label for="parcing">Парковка</label>
+									</li>
 
-							<input type="checkbox"	name="infrastructure" id="parcing" value="parcing">
-							<label for="parcing">Парковка</label>
-
-							<input type="checkbox"	name="infrastructure" id="wifi" value="wifi">
-							<label for="wifi">Wifi</label>
+									<li>
+										<input type="checkbox"	name="infrastructure" id="wifi" value="wifi">
+										<label for="wifi">Wifi</label>
+									</li>
+								</ul>
+							</fieldset>
 						</div>
 						<div class="choice-housing">
-							<p class="choice-title">Тип жилья</p>
+							<fieldset>
+								<legend class="choice-title">Тип жилья</legend>
+								<ul>
+									<li>
+										<input type="checkbox"	name="housing" id="hotel" value="hotel" checked>
+										<label for="hotel">Гостиница</label>
+									</li>
 
-							<input type="checkbox"	name="housing" id="hotel" value="hotel" checked>
-							<label for="hotel">Гостиница</label>
+									<li>
+										<input type="checkbox"	name="housing" id="motel" value="motel" checked>
+										<label for="motel">Мотель</label>
+									</li>
 
-							<input type="checkbox"	name="housing" id="motel" value="motel" checked>
-							<label for="motel">Мотель</label>
-
-							<input type="checkbox"	name="housing" id="apartaments" value="apartaments" checked>
-							<label for="apartaments">Апартаменты</label>
+									<li>
+										<input type="checkbox"	name="housing" id="apartaments" value="artaments" checked>
+										<label for="apartaments">Апартаменты</label>
+									</li>
+								</ul>
+							</fieldset>
 						</div>
 						<div class="choice-price">
-							<p class="choice-title">Стоимость в сутки (р):</p>
-							<div class="price-control">
-								От <input class="min-price" type="text" value="0">
-								До <input class="max-price" type="text" value="3000">
-							</div>
-							<div class="range-toggle">
-								<div class="range"></div>
-								<div class="toggle min-toggle"></div>
-								<div class="toggle max-toggle"></div>
-							</div>
-							<div class="button-form">
-								<button>Показать</button>
-							</div>
+							<fieldset>
+								<legend class="choice-title">Стоимость в сутки (р):</legend>
+								<div class="price-control">
+									От <input class="min-price" type="text" value="0">
+									До <input class="max-price" type="text" value="3000">
+								</div>
+								<div class="range-toggle">
+									<div class="range"></div>
+									<div class="toggle min-toggle"></div>
+									<div class="toggle max-toggle"></div>
+								</div>
+								<div class="button-form">
+									<button>Показать</button>
+								</div>
+							</fieldset>
 						</div>
 					</div>
 				</form>
