@@ -9,6 +9,7 @@ body{
 }
 
 .container{
+	position: relative;
 	max-width: 1200px;
 	min-width: 760px;
 	margin: 0 auto;
@@ -19,6 +20,12 @@ body{
 	content: "";
 	display: table;
 	clear: both;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 
 /* header */
@@ -37,10 +44,8 @@ body{
 }
 
 .main-navigation ul{
-	margin: 0;
 	padding: 0 6%;
 	font-size: 0;
-	list-style: none;
 }
 
 .main-navigation li{
@@ -321,7 +326,7 @@ body{
 /* map block */
 
 .map-block{
-	height: 475px;
+	height: 600px;
 }
 
 /* /end map block */
@@ -342,17 +347,12 @@ body{
 
 .hashtag p{
 	margin: 0;
-	font-family: "PT Sans Bold", Arial, sans-serif;;
+	font-family: "PT Sans Bold", Arial, sans-serif;
 	font-size: 21px;
 	line-height: 48px; /* так нельзя, но по-другому не получилось */
 	font-weight: bold;
 }
 
-.social-btn ul{
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
 
 .social-btn li{
 	display: inline-block;
@@ -385,6 +385,17 @@ body{
 	text-align: right;
 }
 
+/* index footer */
+
+.index-footer{ /* стили, чтобы футер наезжал на карту, но он, почему то, не прибивается к самому низу страницы */
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(255,255,255,.5);
+}
+
 /* /end main footer */
 
 
@@ -393,15 +404,174 @@ body{
 
 /* choice-block */
 
+.choice-block{
+	padding: 30px 6%;
+	background: url(../img/bg_form_choice.jpg) no-repeat;
+}
+
+.choice-infrastructure,
+.choice-housing{
+	width: 20%;
+	float: left;
+}
+
+.choice-price{
+	width: 60%;
+	float: right;
+}
+
+.choice-block fieldset{
+	padding: 0;
+	border: none;
+}
+
+.choice-block legend{
+	margin-bottom: 15px;
+	font-family: "PT Sans Bold", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 21px;
+	font-weight: bold;
+	color: #fff;
+}
+
+.choice-block label{
+	font-size: 14px;
+	line-height: 21px;
+	color: #fff;
+}
+
+.choice-infrastructure input,
+.choice-housing input{
+	margin-bottom: 25px;
+}
+
+.choice-infrastructure li:last-of-type input{
+	margin-bottom: 0;
+}
+
+.choice-housing li:last-of-type input{
+	margin-bottom: 0;
+}
+
 /* /end choice-block */
 
-.about-result{
-	width: 50%;
+
+/* result block */
+
+.result-block,
+.result{
+	padding: 30px 6%;
+	border-bottom: 1px solid #e5e5e5;
+	background-color: #fff;
+}
+
+.sorting-type{
+	width: 80%;
+	float: left;
+}
+
+.pointer-block{
+	width: 20%;
+	float: right;
+	text-align: right;
+}
+
+.sorting-result,
+.sorting-list,
+.sorting-list li{
+	display: inline-block;
+	vertical-align: bottom;
+}
+
+.sorting-result{
+	margin-right: 50px;
+	font-family: "PT Sans Bold", Arial, sans-serif;
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+}
+
+.sorting-list{
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.sorting-list li{
+	margin-right: 35px;
+}
+
+.sorting-list a{
+	color: #b0aaaa;
+	border-bottom: 1px dashed #b0aaaa;
+	text-decoration: none;
+}
+
+.sorting-list .active{
+	color: #81b3d2;
+	border-bottom: none;
+}
+
+/* /end result block */
+
+
+/* first result block */
+/* second result block */
+/* third result block */
+
+.about-result{ /* здесь, судя по инспектору, странный отступ снизу */
+	width: 80%;
 	float: left;
 }
 
 .assessment{
-	width: 50%;
+	width: 20%;
 	float: right;
 	text-align: right;
+}
+
+.img-about-result,
+.info-adout-result{
+	display: inline-block;
+	vertical-align: top;
+}
+
+.info-adout-result{
+	width: 400px;
+	padding-left: 26px;
+}
+
+.info-adout-result .info-title{
+	margin: 0;
+	margin-bottom: 10px;
+	font-family: "PT Sans Bold", Arial, sans-serif;
+	font-size: 21px;
+	line-height: 19px; /* здесь я понизил значение, иначе не выравнилось по одной линии с img */
+}
+
+.info-adout-result .info-text{
+	margin: 0;
+	margin-bottom: 10px;
+	font-size: 14px;
+	line-height: 21px;
+	color: #333;
+}
+
+.info-text span{
+	margin-left: 40px;
+}
+
+.info-adout-result .btn-info{
+	display: inline-block;
+	vertical-align: top;
+	padding: 5px 15px;
+	text-decoration: none;
+	color: #fff;
+}
+
+.btn-info.btn-detailed{
+	background-color: #81b3d2;
+}
+
+.btn-info.btn-reserv{
+	background-color: #766357;
 }
