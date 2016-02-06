@@ -102,7 +102,7 @@ ul{
 /* jumbotron */
 
 .jumbotron {
-	min-height: 510px;
+	min-height: 514px;
 	background: #e7e7e7 url(../img/bg_jumbotron.jpg) no-repeat 0 -56px;
 }
 
@@ -123,15 +123,13 @@ ul{
 }
 
 .reason .reason-title{
-	margin-bottom: 20px;
-	font-family: "PT Sans", Arial, sans-serif;
+	margin-bottom: 25px;
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: bold;
 }
 
 .reason-bottom-text{
-	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 14px;
 	line-height: 26px;
 	color: #333;
@@ -142,12 +140,12 @@ ul{
 .item{
 	width: 33.333333%;
 	float: left;
-	padding: 4% 6%;
+	padding: 3% 6%;
 	text-align: center;
 }
 
 .item .item-title{
-	font-family: "PT Sans Bold", Arial, sans-serif;
+	margin-bottom: 23px;
 	font-size: 21px;
 	line-height: 21px;
 	font-weight: bold;
