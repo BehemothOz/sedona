@@ -76,6 +76,26 @@ ul{
 	color: #000;
 }
 
+.main-navigation a:hover{
+	color: #81b3d2;
+}
+
+.main-navigation a:active{
+	color: rgba(0,0,0,.3);
+}
+
+.main-navigation .active{
+	color: #766357;
+}
+
+.main-navigation .active:hover{
+	color: #604e43;
+}
+
+.main-navigation .active:active{
+	color: rgba(188,99,87,.3);
+}
+
 /* /end header */
 
 
@@ -83,6 +103,7 @@ ul{
 
 .jumbotron {
 	height: 510px;
+	background: #e7e7e7 url(../img/bg_jumbotron.jpg) no-repeat top;
 }
 
 /* /end jumbotron */
