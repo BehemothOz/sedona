@@ -140,7 +140,7 @@ ul{
 .item{
 	width: 33.333333%;
 	float: left;
-	padding: 3% 6%;
+	padding: 3% 4%;
 	text-align: center;
 }
 
@@ -152,6 +152,7 @@ ul{
 }
 
 .item .item-number{
+	margin-bottom: 20px;
 	font-size: 14px;
 	line-height: 24px;
 }
@@ -166,11 +167,11 @@ ul{
 
 /* first reason and second reason */ 
 
-.reason-one-block,
+/*.reason-one-block,
 .reason-two-block{
 	height: 256px;
 	overflow: hidden;
-}
+}*/
 
 .reason-one,
 .reason-two{
@@ -184,15 +185,17 @@ ul{
 }
 
 .reason-one-img{
+	min-height: 254px;
 	width: 66.666666%;
 	float: right;
-	overflow: hidden;
+	background: url(../img/reason_one.jpg) no-repeat center;
 }
 
 .reason-two-img{
+	min-height: 254px; 
 	width: 66.666666%;
 	float: left;
-	overflow: hidden;
+	background: url(../img/reason_two.jpg) no-repeat center;
 }
 
 .reason-two{
@@ -205,12 +208,17 @@ ul{
 
 /* components */
 
+.component{
+	padding-top: 5%;
+	padding-bottom: 7%;
+}
+
 .icon{
 	display: inline-block;
 	vertical-align: top;
 	width: 75px;
 	height: 75px;
-	margin-bottom: 15px;
+	margin-bottom: 10px;
 }
 
 .icon-housing{
@@ -225,11 +233,23 @@ ul{
 	background: url(../img/icon_component_3.png) no-repeat center;
  }
 
+.component-text{
+	margin: 0;
+}
+
 /* /end components */
 
 .other-reason-block{
 	background-color: #eee;
 }
+
+.other-reason{
+	padding-top: 2.4%;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-bottom: 3.7%;
+}
+
 
 /* /end five reason section */
 
@@ -241,21 +261,21 @@ ul{
 }
 
 .wrapper-search-block{
-	width: 50%;
-	padding-top: 20px;
+	width: 570px;
+	padding-top: 36px;
 	margin: 0 auto;
 	text-align: center;
 }
 
 .search-block .top-title{
-	font-family: "PT Sans Bold", Arial, sans-serif;
+	margin-bottom: 30px;
 	font-size: 30px;
 	line-height: 24px;
 	font-weight: bold;
 }
 
 .search-block .bottom-title{
-	margin-bottom: 35px;
+	margin-bottom: 47px;
 	font-size: 14px;
 	line-height: 24px;
 	color: #333;
@@ -266,7 +286,6 @@ ul{
 	display: block;
 	width: 570px;
 	padding: 30px;
-	font-family: "PT Sans Bold", Arial, sans-serif;
 	font-size: 21px;
 	line-height: 26px;
 	color: #fff;
@@ -286,7 +305,6 @@ ul{
 
 .main-form label{
 	display: inline-block;
-	font-family: "PT Sans Bold", Arial, sans-serif;
 	font-size: 14px;
 	line-height: 26px;
 	font-weight: bold;
@@ -326,7 +344,6 @@ ul{
 	display: block;
 	width: 100%;
 	padding: 17px 0;
-	font-family: "PT Sans Bold", Arial, sans-serif;
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: bold;
@@ -345,7 +362,7 @@ ul{
 /* map block */
 
 .map-block{
-	height: 600px;
+	height: 592px;
 }
 
 /* /end map block */
@@ -366,7 +383,6 @@ ul{
 
 .hashtag p{
 	margin: 0;
-	font-family: "PT Sans Bold", Arial, sans-serif;
 	font-size: 21px;
 	line-height: 48px; /* так нельзя, но по-другому не получилось */
 	font-weight: bold;
@@ -376,7 +392,6 @@ ul{
 .social-btn li{
 	display: inline-block;
 	vertical-align: middle;
-	margin-right: 15px;
 }
 
 .social-btn a{
@@ -398,7 +413,7 @@ ul{
 }
 
 .copyright span{
-	padding-right: 10px;
+	padding-right: 25px;
 	font-size: 14px;
 	line-height: 26px;
 	text-align: right;
