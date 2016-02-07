@@ -392,14 +392,52 @@ ul{
 .social-btn li{
 	display: inline-block;
 	vertical-align: middle;
+	margin-right: 1px;
 }
 
-.social-btn a{
+.social-btn .btn{
+	position: relative;
 	display: block;
-	width: 48px;
-	height: 48px;
+	width: 46px;
+	height: 46px;
 	background-color: #81b3d2;
 }
+
+.social-btn .btn:hover{
+	background-color: #669ec0;
+}
+
+.social-btn .btn:active{
+	background-color: rgba(102,158,192,.3);
+}
+
+.social-btn .btn::before{
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: url(../img/sprite.png) no-repeat;
+}
+
+.social-btn .btn-tw::before{
+	width: 17px;
+    height: 15px;
+    background-position: -352px -10px;
+}
+
+.social-btn .btn-fb::before{
+	width: 10px;
+    height: 19px;
+    background-position: -133px -10px;
+}
+
+.social-btn .btn-yt::before{
+	width: 20px;
+    height: 16px;
+    background-position: -389px -10px;
+}
+
 
 .copyright{
 	display: table;
