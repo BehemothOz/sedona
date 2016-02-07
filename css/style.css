@@ -472,12 +472,13 @@ ul{
 
 
 
+
 /* *** hotel page ***  */
 
 /* choice-block */
 
 .choice-block{
-	padding: 30px 6%;
+	padding: 27px 72px;
 	background: url(../img/bg_form_choice.jpg) no-repeat;
 }
 
@@ -493,13 +494,13 @@ ul{
 }
 
 .choice-block fieldset{
+	margin: 0;
 	padding: 0;
 	border: none;
 }
 
 .choice-block legend{
-	margin-bottom: 15px;
-	font-family: "PT Sans Bold", Arial, sans-serif;
+	margin-bottom: 24px;
 	font-size: 16px;
 	line-height: 21px;
 	font-weight: bold;
@@ -507,21 +508,41 @@ ul{
 }
 
 .choice-block label{
+	position: relative;
+	padding-left: 40px;
 	font-size: 14px;
 	line-height: 21px;
 	color: #fff;
+	cursor: pointer;
 }
 
-.choice-infrastructure input,
-.choice-housing input{
-	margin-bottom: 25px;
+.choice-block label::before{
+	content: "";
+	position: absolute;
+	display: block;
+	width: 22px;
+	height: 22px;
+	background: url(../img/icon_checkbox_full_pull.png) no-repeat left center;
 }
 
-.choice-infrastructure li:last-of-type input{
+.choice-block input[type="checkbox"]:checked ~ label::before{
+	background: url(../img/icon_checkbox_full.png) no-repeat left center;
+}
+
+.choice-block input[type="checkbox"]{
+	display: none;
+}
+
+.choice-infrastructure li,
+.choice-housing li{
+	margin-bottom: 24px;
+}
+
+.choice-infrastructure li:last-of-type{
 	margin-bottom: 0;
 }
 
-.choice-housing li:last-of-type input{
+.choice-housing li:last-of-type{
 	margin-bottom: 0;
 }
 
@@ -557,7 +578,6 @@ ul{
 
 .sorting-result{
 	margin-right: 50px;
-	font-family: "PT Sans Bold", Arial, sans-serif;
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: bold;
@@ -615,7 +635,6 @@ ul{
 .info-adout-result .info-title{
 	margin: 0;
 	margin-bottom: 10px;
-	font-family: "PT Sans Bold", Arial, sans-serif;
 	font-size: 21px;
 	line-height: 19px; /* здесь я понизил значение, иначе не выравнилось по одной линии с img */
 }
