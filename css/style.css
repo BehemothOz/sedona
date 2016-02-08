@@ -438,23 +438,27 @@ ul{
     background-position: -389px -10px;
 }
 
-
-.copyright{
-	display: table;
-	padding-top: 5px; /* или такое вот вырванивание по вертикали */
-}
-
-.copyright span,
-.copyright img{
-	display: table-cell;
-	vertical-align: middle;
-}
-
 .copyright span{
-	padding-right: 25px;
+	display: inline-block;
+	vertical-align: middle;
 	font-size: 14px;
-	line-height: 26px;
-	text-align: right;
+	line-height: 46px; /* выравнивание с помощью line-height */
+}
+
+.copyright .copyright-img{
+	display: inline-block;
+	vertical-align: middle;
+	width: 113px;
+    height: 39px;
+    background: url(../img/sprite.png) no-repeat -429px -10px;
+ }
+
+.copyright .copyright-img:hover{
+	background: url(../img/sprite.png) no-repeat -695px -10px;
+}
+
+.copyright .copyright-img:active{
+	background: url(../img/sprite.png) no-repeat -562px -10px;
 }
 
 /* index footer */
