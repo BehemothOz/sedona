@@ -103,7 +103,7 @@ ul{
 
 .jumbotron {
 	min-height: 514px;
-	background: #e7e7e7 url(../img/bg_jumbotron.jpg) no-repeat 0 -56px;
+	background: #e7e7e7 url(../img/bg_jumbotron.jpg) no-repeat center -56px;
 }
 
 /* /end jumbotron */
@@ -298,16 +298,17 @@ ul{
 .main-form{
 	position: absolute;
 	width: 570px;
-	padding: 55px 45px;
-	text-align: right;
+	padding: 55px;
 	background-color: #fff;
 }
 
 .main-form label{
-	display: inline-block;
+	display: block;
+	margin-bottom: 30px;
 	font-size: 14px;
 	line-height: 26px;
 	font-weight: bold;
+	text-align: left;
 }
 
 .main-form input{
@@ -317,9 +318,8 @@ ul{
 }
 
 .main-form input[type="text"]{
-	width: 345px;
+	width: 305px;
 	margin-left: 20px;
-	margin-bottom: 30px;
 }
 
 .main-form input[type="number"]{
@@ -363,6 +363,11 @@ ul{
 
 .map-block{
 	height: 592px;
+}
+
+.map-block img{
+	max-width: 100%;
+	height: auto;
 }
 
 /* /end map block */
@@ -482,18 +487,21 @@ ul{
 /* choice-block */
 
 .choice-block{
-	padding: 27px 72px;
-	background: url(../img/bg_form_choice.jpg) no-repeat;
+	padding-top: 27px;
+	padding-bottom: 31px;
+	padding-right: 72px;
+	padding-left: 72px;
+	background: url(../img/bg_form_choice.jpg) no-repeat center;
 }
 
 .choice-infrastructure,
 .choice-housing{
-	width: 20%;
+	width: 24%;
 	float: left;
 }
 
 .choice-price{
-	width: 60%;
+	width: 52%;
 	float: right;
 }
 
@@ -520,11 +528,16 @@ ul{
 	cursor: pointer;
 }
 
+.choice-housing label{
+	padding-left: 43px;
+}
+
+
 .choice-block label::before{
 	content: "";
 	position: absolute;
 	display: block;
-	width: 22px;
+	width: 25px;
 	height: 22px;
 	background: url(../img/icon_checkbox_full_pull.png) no-repeat left center;
 }
@@ -557,7 +570,7 @@ ul{
 
 .result-block,
 .result{
-	padding: 30px 6%;
+	padding: 30px 72px;
 	border-bottom: 1px solid #e5e5e5;
 	background-color: #fff;
 }
@@ -567,7 +580,7 @@ ul{
 	float: left;
 }
 
-.pointer-block{
+.arrow-block{
 	width: 20%;
 	float: right;
 	text-align: right;
@@ -581,7 +594,7 @@ ul{
 }
 
 .sorting-result{
-	margin-right: 50px;
+	margin-right: 43px;
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: bold;
@@ -589,22 +602,69 @@ ul{
 
 .sorting-list{
 	font-size: 12px;
-	line-height: 18px;
+	line-height: 22px;
 }
 
 .sorting-list li{
-	margin-right: 35px;
+	margin-right: 30px;
+}
+
+.sorting-list li:first-of-type{
+	margin-right: 36px;
 }
 
 .sorting-list a{
-	color: #b0aaaa;
-	border-bottom: 1px dashed #b0aaaa;
+	color: rgba(0,0,0,.3);
+	border-bottom: 1px dashed #81b3d2;
 	text-decoration: none;
+}
+
+.sorting-list a:hover:not(.active){
+	color: #81b3d2;
+}
+
+.sorting-list a:active:not(.active){
+	color: #000;
+	border: none;
 }
 
 .sorting-list .active{
 	color: #81b3d2;
 	border-bottom: none;
+	cursor: default;
+}
+
+.arrow-block .arrow{
+	display: inline-block;
+	vertical-align: bottom;
+	width: 0;
+	height: 0;
+	font-size: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	cursor: pointer;
+}
+
+.arrow-block .arrow-up{
+	border-bottom: 10px solid #ccc;
+}
+
+.arrow-block .arrow-down{
+	margin-left: 10px;
+	border-top: 10px solid #ccc;
+}
+
+.arrow-block .arrow-active{
+	border-top-color: #81b3d2;
+	cursor: default;
+}
+
+.arrow-block .arrow-up:hover:not(.arrow-active){
+	border-bottom-color: #000;
+}
+
+.arrow-block .arrow-up:active:not(.arrow-active){
+	border-bottom-color: #81b3d2;
 }
 
 /* /end result block */
@@ -614,7 +674,7 @@ ul{
 /* second result block */
 /* third result block */
 
-.about-result{ /* здесь, судя по инспектору, странный отступ снизу */
+.about-result{ 
 	width: 80%;
 	float: left;
 }
@@ -631,21 +691,24 @@ ul{
 	vertical-align: top;
 }
 
+.img-about-result img{
+	display: block;
+}
+
 .info-adout-result{
-	width: 400px;
 	padding-left: 26px;
 }
 
 .info-adout-result .info-title{
 	margin: 0;
-	margin-bottom: 10px;
+	margin-bottom: 12px;
 	font-size: 21px;
-	line-height: 19px; /* здесь я понизил значение, иначе не выравнилось по одной линии с img */
+	line-height: 16px; /* здесь я понизил значение, иначе не выравнилось по одной линии с img */
 }
 
 .info-adout-result .info-text{
 	margin: 0;
-	margin-bottom: 10px;
+	margin-bottom: 14px;
 	font-size: 14px;
 	line-height: 21px;
 	color: #333;
@@ -658,7 +721,11 @@ ul{
 .info-adout-result .btn-info{
 	display: inline-block;
 	vertical-align: top;
-	padding: 5px 15px;
+	padding: 3px 12px;
+	margin-right: 3px;
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: bold;
 	text-decoration: none;
 	color: #fff;
 }
@@ -669,4 +736,16 @@ ul{
 
 .btn-info.btn-reserv{
 	background-color: #766357;
+}
+
+.stars-block li{
+	display: inline-block;
+	vertical-align: top;
+}
+
+.stars-block .star{
+	display: block;
+	width: 20px;
+	height: 20px;
+	background: url(../img/icon_star.png) no-repeat center;
 }

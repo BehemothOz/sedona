@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>HTML Academy: Седона</title>
+        <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
  	</head>
@@ -29,7 +30,7 @@
 					<div class="row">
 						<div class="choice-infrastructure">
 							<fieldset>
-								<legend class="choice-title">Инфраструктура</legend>
+								<legend class="choice-title">Инфраструктура:</legend>
 								<ul>
 									<li>
 										<input type="checkbox"	name="infrastructure" id="pool" value="pool" checked>
@@ -50,7 +51,7 @@
 						</div>
 						<div class="choice-housing">
 							<fieldset>
-								<legend class="choice-title">Тип жилья</legend>
+								<legend class="choice-title">Тип жилья:</legend>
 								<ul>
 									<li>
 										<input type="checkbox"	name="housing" id="hotel" value="hotel" checked>
@@ -102,9 +103,9 @@
 							<li><a href="#">По рейтингу</a></li>
 						</ul>
 					</div>
-					<div class="pointer-block">
-						<i class="pointer pointer-up">1</i>
-						<i class="pointer pointer-down">2</i>
+					<div class="arrow-block">
+						<i class="arrow arrow-up"></i>
+						<i class="arrow arrow-down arrow-active"></i>
 					</div>
 				</div>
 			</div>
@@ -123,8 +124,13 @@
 					</div>
 				</div>
 				<div class="assessment">
-					<div class="stars">
-						<i class="star"></i>
+					<div class="stars-block">
+						<ul>
+							<li><i class="star"></i></li>
+							<li><i class="star"></i></li>
+							<li><i class="star"></i></li>
+							<li><i class="star"></i></li>
+						</ul>
 					</div>
 					<div class="rating">
 						Рейтинг: 8,5
@@ -146,8 +152,11 @@
 					</div>
 				</div>
 				<div class="assessment">
-					<div class="stars">
-						<i class="star"></i>
+					<div class="stars-block">
+						<ul>
+							<li><i class="star"></i></li>
+							<li><i class="star"></i></li>
+						</ul>
 					</div>
 					<div class="rating">
 						Рейтинг: 8,9
@@ -169,8 +178,12 @@
 					</div>
 				</div>
 				<div class="assessment">
-					<div class="stars">
-						<i class="star"></i>
+					<div class="stars-block">
+						<ul>
+							<li><i class="star"></i></li>
+							<li><i class="star"></i></li>
+							<li><i class="star"></i></li>
+						</ul>
 					</div>
 					<div class="rating">
 						Рейтинг: 9,2
@@ -187,14 +200,14 @@
 					</div>
 					<div class="footer-item social-btn">
 						<ul>
-							<li><a href="#" class="btn btn-twitter"></a></li>
+							<li><a href="#" class="btn btn-tw"></a></li>
 							<li><a href="#" class="btn btn-fb"></a></li>
-							<li><a href="#" class="btn btn-youtube"></a></li>
+							<li><a href="#" class="btn btn-yt"></a></li>
 						</ul>
 					</div>
 					<div class="footer-item copyright">
 						<span>Website by</span>
-						<img src="img/logo_academy.png" alt="copyright" width="113" height="39">
+						<a class="copyright-img" href="#"></a>	
 					</div>
 				</div>
 			</footer>
