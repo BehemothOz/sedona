@@ -12,7 +12,7 @@
 			<!-- main header -->
 			<header class="main-header">
 				<div class="logo-block">
-					<a class="logo" href="index.html"><img src="img/logo.png" width="138" height="70" alt="logo.png"></a>
+					<img src="img/logo.png" width="138" height="70" alt="logo.png">
 				</div>
 				<nav class="main-navigation">
 					<ul>
@@ -27,7 +27,9 @@
 			<!-- main content -->
 				<!-- jumbotron -->
 			<div class="jumbotron">
-				<!-- <img class="jumbotron-img" src="img/bg_jumbotron.jpg" width="1200" height="510" alt="jumbotron.jpg"> -->
+				<div class="jumbotron-text">
+					<img src="img/bg_jumbotron_text.png" height="352" width="458" alt="sedona.png">
+				</div>
 			</div>
 
 			<!-- five reason section-->
@@ -116,22 +118,22 @@
 					
 					<div class="main-form">
 						<form action="#" method="post">
-							<label>Дата заезда: 
-								<input type="text" name="visit" placeholder="24 апреля 2014" required>
+							<label>
+								<span class="input-caption">Дата заезда:</span>
+								<input class="date-input" type="text" name="visit" placeholder="24 апреля 2014" required><a class="ic-calendar" href=""></a>
 							</label>
-							<label>Дата выезда: 
-								<input type="text" name="departure" placeholder="4 июля 2014" required>
+							<label>
+								<span class="input-caption">Дата выезда:</span>
+								<input class="date-input" type="text" name="departure" placeholder="4 июля 2014" required><a class="ic-calendar" href=""></a>
 							</label> 
-
-							<div class="wrapper-label-number row">
-								<div class="label-adult">
-									<label class="q">Взрослые:<input type="number" value="2"></label>
-								</div>
-								<div class="label-child">
-									<label>Дети:<input type="number" value="0"></label> 
-								</div>
-							</div>
-
+							<label>
+								<span class="input-caption">Взрослые:</span>
+								<a class="ic-minus" href=""></a><input type="text" name="adult" placeholder="2"><a class="ic-plus" href=""></a>
+							</label>
+							<label>
+								<span class="input-caption">Дети:</span>
+								<a class="ic-minus" href=""></a><input type="text" name="child" placeholder="0"><a class="ic-plus" href=""></a>
+							</label> 
 							<button>Найти</button> 
 						</form>
 					</div>

@@ -101,9 +101,21 @@ ul{
 
 /* jumbotron */
 
-.jumbotron {
+.jumbotron{
 	min-height: 514px;
-	background: #e7e7e7 url(../img/bg_jumbotron.jpg) no-repeat center -56px;
+	padding: 75px 0 85px;
+	background: #e7e7e7 url(../img/bg_jumbotron.jpg) no-repeat center;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.jumbotron-text{
+	width: 458px;
+	margin: 0 auto;
+}
+
+.jumbotron-text img{
+	display: block;
 }
 
 /* /end jumbotron */
@@ -140,7 +152,7 @@ ul{
 .item{
 	width: 33.333333%;
 	float: left;
-	padding: 3% 4%;
+	padding: 36px 50px;
 	text-align: center;
 }
 
@@ -175,6 +187,7 @@ ul{
 
 .reason-one,
 .reason-two{
+	min-height: 254px;
 	color: #fff;
 	background-color: #81b3d2;
 }
@@ -189,6 +202,8 @@ ul{
 	width: 66.666666%;
 	float: right;
 	background: url(../img/reason_one.jpg) no-repeat center;
+	-webkit-background-size: cover;
+	background-size: cover;
 }
 
 .reason-two-img{
@@ -196,6 +211,8 @@ ul{
 	width: 66.666666%;
 	float: left;
 	background: url(../img/reason_two.jpg) no-repeat center;
+	-webkit-background-size: cover;
+	background-size: cover;
 }
 
 .reason-two{
@@ -208,9 +225,8 @@ ul{
 
 /* components */
 
-.component{
-	padding-top: 5%;
-	padding-bottom: 7%;
+.components{
+	padding: 22px 0 50px;
 }
 
 .icon{
@@ -244,10 +260,7 @@ ul{
 }
 
 .other-reason{
-	padding-top: 2.4%;
-	padding-left: 5%;
-	padding-right: 5%;
-	padding-bottom: 3.7%;
+	padding: 29px 65px 44px;
 }
 
 
@@ -303,41 +316,59 @@ ul{
 }
 
 .main-form label{
-	display: block;
+	display: inline-block;
+	vertical-align: top;
 	margin-bottom: 30px;
-	font-size: 14px;
-	line-height: 26px;
-	font-weight: bold;
+	font-size: 0;
 	text-align: left;
 }
 
+.main-form label:nth-of-type(3){
+	margin-right: 6px;
+}
+
+.main-form label:last-of-type{
+	margin-bottom: 52px;
+}
+
+.main-form label:last-of-type span{
+	text-align: center;
+}
+
+.input-caption{
+	display: inline-block;
+	vertical-align: top;
+	width: 110px;
+	padding: 6px 0;
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: bold;
+}
+
 .main-form input{
-	padding: 10px 15px;
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: bold;
 	background-color: #f2f2f2;
 	border: none;
 }
 
-.main-form input[type="text"]{
-	width: 305px;
-	margin-left: 20px;
+.main-form input::-webkit-input-placeholder{
+	color: #000;
+	text-transform: uppercase;
 }
 
-.main-form input[type="number"]{
-	width: 115px;
+input[name="visit"],
+input[name="departure"]{
+	width: 315px;
+	padding: 6px 15px;
+}
+
+input[name="adult"],
+input[name="child"]{
+	width: 38px;
+	padding: 6px 0;
 	text-align: center;
-	margin-left: 48px;
-}
-
-.wrapper-label-number{
-	margin-bottom: 55px;
-}
-
-.label-adult{
-	float: left;
-}
-
-.label-child{
-	float: right;
 }
 
 .main-form button{
@@ -351,6 +382,92 @@ ul{
 	background-color: #81b3d2;
 	text-transform: uppercase;
 	border: none;
+	cursor: pointer;
+}
+
+.main-form button:hover{
+	background-color: #669ec0;
+}
+
+.main-form button:active{
+	color: #88b6d1;
+	background-color: #5496bd;
+}
+
+.ic-calendar{
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	width: 35px;
+	height: 38px;
+	background-color: #f2f2f2;
+}
+
+.ic-calendar::after{
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 22px;
+    height: 22px;
+	transform: translate(-50%, -50%);
+	background: url(../img/sprite.png) no-repeat -10px -10px;
+}
+
+.ic-calendar:hover::after{
+	background: url(../img/sprite.png) no-repeat -92px -10px;
+}
+
+.ic-calendar:active::after{
+	background: url(../img/sprite.png) no-repeat -51px -10px;
+}
+
+.ic-minus,
+.ic-plus{
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	width: 38px;
+	height: 38px;
+	background-color:  #f2f2f2;
+}
+
+.ic-minus::after,
+.ic-plus::after{
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: url(../img/sprite.png) no-repeat;
+}
+
+.ic-minus::after{
+	width: 12px;
+    height: 4px;
+    background-position: -163px -10px;
+}
+
+.ic-plus::after{
+	width: 12px;
+    height: 12px;
+    background-position: -259px -10px;
+}
+
+.ic-minus:hover::after{
+	background-position: -227px -10px;
+}
+
+.ic-minus:active::after{
+	background-position: -195px -10px;
+}
+
+.ic-plus:hover::after{
+	background-position: -321px -10px;
+}
+
+.ic-plus:active::after{
+	background-position: -290px -10px;
 }
 
 
