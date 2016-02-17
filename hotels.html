@@ -73,17 +73,24 @@
 						<div class="choice-price">
 							<fieldset>
 								<legend class="choice-title">Стоимость в сутки (р):</legend>
-								<div class="price-control">
-									От <input class="min-price" type="text" value="0">
-									До <input class="max-price" type="text" value="3000">
-								</div>
-								<div class="range-toggle">
-									<div class="range"></div>
-									<div class="toggle min-toggle"></div>
-									<div class="toggle max-toggle"></div>
-								</div>
+								<div class="range-filter">
+								    <div class="prise-controls">
+								        <div class="prise-controls-item">
+								         	ОТ <input name="min-value" type="text" value="0"></div><!--
+								        --><div class="prise-controls-item">
+								         	ДО <input name="max-value" type="text" value="3000">
+								        </div>
+								    </div>
+								    <div class="range-controls">
+								      	<div class="scale">
+								      		<div class="bar"></div>
+								      	</div>
+								      	<div class="toggle min-toggle"></div>
+								      	<div class="toggle max-toggle"></div>
+								    </div>
+								  </div>
 								<div class="button-form">
-									<button>Показать</button>
+									<button class="choice-btn">Показать</button>
 								</div>
 							</fieldset>
 						</div>
@@ -118,9 +125,14 @@
 					</div>
 					<div class="info-adout-result">
 						<h3 class="info-title">Amara Resort & Spa</h3>
-						<p class="info-text">Гостиница <span>от 3500 р.</span></p>
-						<a class="btn-info btn-detailed" href="#">Подбробнее</a>
-						<a class="btn-info btn-reserv" href="#">Забронировать</a>
+						<div class="info-text-left">
+							<span>Гостиница</span>
+							<a class="btn-info btn-detailed" href="#">Подробнее</a>
+						</div>
+						<div class="info-text-right">
+							 <span>от 3500 р.</span>
+							<a class="btn-info btn-reserv" href="#">Забронировать</a>
+						</div>
 					</div>
 				</div>
 				<div class="assessment">
@@ -146,9 +158,14 @@
 					</div>
 					<div class="info-adout-result">
 						<h3 class="info-title">Desert Quail Inn</h3>
-						<p class="info-text">Мотель <span>от 2000 р.</span></p>
-						<a class="btn-info btn-detailed" href="#">Подробнее</a>
-						<a class="btn-info btn-reserv" href="#">Забронировать</a>
+						<div class="info-text-left">
+							<span>Мотель</span>
+							<a class="btn-info btn-detailed" href="#">Подробнее</a>
+						</div>
+						<div class="info-text-right">
+							 <span>от 2000 р.</span>
+							<a class="btn-info btn-reserv" href="#">Забронировать</a>
+						</div>
 					</div>
 				</div>
 				<div class="assessment">
@@ -172,9 +189,14 @@
 					</div>
 					<div class="info-adout-result">
 						<h3 class="info-title">Villas at Poco Diablo</h3>
-						<p class="info-text">Апартаменты <span>от 4000 р.</span></p>
-						<a class="btn-info btn-detailed" href="#">Подробнее</a>
-						<a class="btn-info btn-reserv" href="#">Забронировать</a>
+						<div class="info-text-left">
+							<span>Апартаменты</span>
+							<a class="btn-info btn-detailed" href="#">Подробнее</a>
+						</div>
+						<div class="info-text-right">
+							 <span>от 4000 р.</span>
+							<a class="btn-info btn-reserv" href="#">Забронировать</a>
+						</div>
 					</div>
 				</div>
 				<div class="assessment">

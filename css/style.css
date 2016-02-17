@@ -238,15 +238,18 @@ ul{
 }
 
 .icon-housing{
-	background: url(../img/icon_component_1.png) no-repeat center;
+	background: url(../img/sprite.png) no-repeat center;
+	background-position: -221px -7px
 }
 
 .icon-food{
-	background: url(../img/icon_component_2.png) no-repeat center;
+	background: url(../img/sprite.png) no-repeat center;
+	background-position: -315px -7px;
 }
 
  .icon-memento{
-	background: url(../img/icon_component_3.png) no-repeat center;
+	background: url(../img/sprite.png) no-repeat center;
+	background-position: -404px -10px;
  }
 
 .component-text{
@@ -313,6 +316,7 @@ ul{
 	width: 570px;
 	padding: 55px;
 	background-color: #fff;
+	z-index: 100;
 }
 
 .main-form label{
@@ -445,29 +449,29 @@ input[name="child"]{
 .ic-minus::after{
 	width: 12px;
     height: 4px;
-    background-position: -163px -10px;
+    background-position: -524px -10px;
 }
 
 .ic-plus::after{
 	width: 12px;
     height: 12px;
-    background-position: -259px -10px;
+    background-position: -620px -10px;
 }
 
 .ic-minus:hover::after{
-	background-position: -227px -10px;
+	background-position: -588px -10px;
 }
 
 .ic-minus:active::after{
-	background-position: -195px -10px;
+	background-position: -556px -10px;
 }
 
 .ic-plus:hover::after{
-	background-position: -321px -10px;
+	background-position: -682px -10px;
 }
 
 .ic-plus:active::after{
-	background-position: -290px -10px;
+	background-position: -651px -10px;
 }
 
 
@@ -545,19 +549,19 @@ input[name="child"]{
 .social-btn .btn-tw::before{
 	width: 17px;
     height: 15px;
-    background-position: -352px -10px;
+    background-position: -752px -10px;
 }
 
 .social-btn .btn-fb::before{
 	width: 10px;
     height: 19px;
-    background-position: -133px -10px;
+    background-position: -494px -10px;
 }
 
 .social-btn .btn-yt::before{
 	width: 20px;
     height: 16px;
-    background-position: -389px -10px;
+    background-position: -789px -10px;
 }
 
 .copyright span{
@@ -572,20 +576,20 @@ input[name="child"]{
 	vertical-align: middle;
 	width: 113px;
     height: 39px;
-    background: url(../img/sprite.png) no-repeat -429px -10px;
+    background: url(../img/sprite.png) no-repeat -829px -10px;
  }
 
 .copyright .copyright-img:hover{
-	background: url(../img/sprite.png) no-repeat -695px -10px;
+	background: url(../img/sprite.png) no-repeat -1095px -10px;
 }
 
 .copyright .copyright-img:active{
-	background: url(../img/sprite.png) no-repeat -562px -10px;
+	background: url(../img/sprite.png) no-repeat -962px -10px;
 }
 
 /* index footer */
 
-.index-footer{ /* стили, чтобы футер наезжал на карту, но он, почему то, не прибивается к самому низу страницы */
+.index-footer{ /* стили, чтобы футер наезжал на карту */
 	width: 100%;
 	position: absolute;
 	bottom: 0;
@@ -618,7 +622,7 @@ input[name="child"]{
 }
 
 .choice-price{
-	width: 52%;
+	width: 31%;
 	float: right;
 }
 
@@ -649,18 +653,17 @@ input[name="child"]{
 	padding-left: 43px;
 }
 
-
 .choice-block label::before{
 	content: "";
 	position: absolute;
 	display: block;
 	width: 25px;
 	height: 22px;
-	background: url(../img/icon_checkbox_full_pull.png) no-repeat left center;
+	background: url(../img/sprite.png) no-repeat -179px -10px;
 }
 
 .choice-block input[type="checkbox"]:checked ~ label::before{
-	background: url(../img/icon_checkbox_full.png) no-repeat left center;
+	background: url(../img/sprite.png) no-repeat -133px -10px;
 }
 
 .choice-block input[type="checkbox"]{
@@ -678,6 +681,118 @@ input[name="child"]{
 
 .choice-housing li:last-of-type{
 	margin-bottom: 0;
+}
+
+/* filter by price for choice-block */
+
+.choice-price .choice-title{
+	margin-bottom: 10px;
+}
+
+.range-filter{
+  	padding-left: 10px;
+	margin-bottom: 13px;
+	font-size: 14px;
+	line-height: 21px;
+	color: #fff;
+}
+
+.prise-controls{
+	position: relative;
+	border: 2px solid #fff;
+	border-radius: 5px;
+}
+
+.prise-controls::before{
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: block;
+	width: 2px;
+	height: 22px;
+	background-color: #fff;
+}
+
+.prise-controls-item{
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+	padding: 6px 0;
+	text-align: center;
+}
+
+input[name="min-value"],
+input[name="max-value"]{
+	width: 30px;
+	border: none;
+	background-color: transparent;
+	text-align: center;
+}
+
+input[name="min-value"]:focus,
+input[name="max-value"]:focus{
+	outline: none;
+}
+
+.range-controls{
+	position: relative;
+	padding: 19px 0;
+	z-index: 1;
+}
+
+.scale{
+	height: 2px;
+	background-color: rgba(0,0,0,.3);
+}
+
+.bar{
+	width: 80%;
+	height: 2px;
+	background-color: #fff;
+}
+
+.toggle{
+	position: absolute;
+	top: 10px;
+	width: 4px;
+	height: 4px;
+	border: 8px solid #fff;
+	border-radius: 20px;
+	background-color: #ababab;
+	cursor: pointer;
+	z-index: 10;
+	box-sizing: content-box;
+}
+
+.toggle:hover{
+	background-color: #1c4f80;
+}
+
+.max-toggle{
+	left: 80%;
+}
+
+.button-form{
+	text-align: center;
+}
+
+.choice-btn{
+	display: inline-block;
+	padding: 5px 33px;
+	font-size: 14px;
+	line-height: 21px;
+	color: #fff;
+	text-transform: uppercase;
+	background-color: transparent;
+	border: 2px solid #fff;
+	border-radius: 3px;
+}
+
+.choice-btn:hover{
+	color: #000;
+	background-color: #fff;
 }
 
 /* /end choice-block */
@@ -759,20 +874,17 @@ input[name="child"]{
 	font-size: 0;
 	border-left: 5px solid transparent;
 	border-right: 5px solid transparent;
-	cursor: pointer;
-}
-
-.arrow-block .arrow-up{
 	border-bottom: 10px solid #ccc;
+	cursor: pointer;
 }
 
 .arrow-block .arrow-down{
 	margin-left: 10px;
-	border-top: 10px solid #ccc;
+	transform: rotate(180deg);
 }
 
 .arrow-block .arrow-active{
-	border-top-color: #81b3d2;
+	border-bottom-color: #81b3d2;
 	cursor: default;
 }
 
@@ -814,6 +926,7 @@ input[name="child"]{
 
 .info-adout-result{
 	padding-left: 26px;
+	font-size: 0;
 }
 
 .info-adout-result .info-title{
@@ -823,36 +936,71 @@ input[name="child"]{
 	line-height: 16px; /* здесь я понизил значение, иначе не выравнилось по одной линии с img */
 }
 
-.info-adout-result .info-text{
-	margin: 0;
-	margin-bottom: 14px;
+.info-text-left,
+.info-text-right{
+	display: inline-block;
+	vertical-align: top;
 	font-size: 14px;
 	line-height: 21px;
 	color: #333;
 }
 
-.info-text span{
-	margin-left: 40px;
+.info-text-left{
+	width: 111px;
+	margin-right: 5px;
+}
+
+.info-text-right{
+	width: 143px;
+}
+
+.info-text-left span,
+.info-text-right span{
+	display: block;
+	margin-bottom: 14px;
 }
 
 .info-adout-result .btn-info{
-	display: inline-block;
-	vertical-align: top;
-	padding: 3px 12px;
-	margin-right: 3px;
+	display: block;
+	padding: 3px 0;
 	font-size: 14px;
 	line-height: 21px;
 	font-weight: bold;
 	text-decoration: none;
 	color: #fff;
+	text-align: center;
 }
 
 .btn-info.btn-detailed{
 	background-color: #81b3d2;
 }
 
+.btn-info.btn-detailed:hover{
+	background-color: #669ec0;
+}
+
+.btn-info.btn-detailed:active{
+	color: #7aadcb;
+	background-color: #5496bd;
+}
+
 .btn-info.btn-reserv{
 	background-color: #766357;
+}
+
+.btn-info.btn-reserv:hover{
+	background-color: #604e43;
+}
+
+.btn-info.btn-reserv:active{
+	color: #857871;
+	background-color: #503e33;
+}
+
+/* stars element */
+
+.stars-block{
+	margin-bottom: 43px;
 }
 
 .stars-block li{
@@ -862,7 +1010,22 @@ input[name="child"]{
 
 .stars-block .star{
 	display: block;
-	width: 20px;
-	height: 20px;
-	background: url(../img/icon_star.png) no-repeat center;
+	width: 19px;
+	height: 16px;
+	background: url(../img/sprite.png) no-repeat -713px -10px;
+}
+
+.rating{
+	display: inline-block;
+	vertical-align: top;
+	padding: 3px 13px;
+	font-size: 14px;
+	line-height: 21px;
+	background-color: #f2f2f2;
+}
+
+/* ******************* */
+
+.main-form-toggle{
+	display: none;
 }

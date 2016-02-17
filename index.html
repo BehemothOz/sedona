@@ -142,7 +142,8 @@
 			
 			<!-- map -->
 			<section class="map-block">
-				<img class="map" src="img/map.jpg" width="1200" height="592" alt="map.jpg">
+				<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=KlJgcH4j9hagGwGPVV970GncSX3AtgBR&width=100%&height=592&lang=ru_RU&sourceType=constructor"></script>
+				<!--<img class="map" src="img/map.jpg" width="1200" height="592" alt="map.jpg">-->
 			</section>
 						
 			<!-- main footer -->
@@ -164,6 +165,18 @@
 					</div>
 				</div>
 			</footer>
-		</div>			
+		</div>
+
+		<script>
+			var popup = document.querySelector(".btn-call-form");
+			var form = document.querySelector(".main-form")
+
+			popup.addEventListener("click", function(event){
+				event.preventDefault();
+				form.classList.toggle("main-form-toggle");
+			});
+
+		</script>
+
     </body>
 </html>
