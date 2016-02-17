@@ -105,7 +105,6 @@ ul{
 	min-height: 514px;
 	padding: 75px 0 85px;
 	background: #e7e7e7 url(../img/bg_jumbotron.jpg) no-repeat center;
-	-webkit-background-size: cover;
 	background-size: cover;
 }
 
@@ -179,12 +178,6 @@ ul{
 
 /* first reason and second reason */ 
 
-/*.reason-one-block,
-.reason-two-block{
-	height: 256px;
-	overflow: hidden;
-}*/
-
 .reason-one,
 .reason-two{
 	min-height: 254px;
@@ -202,7 +195,6 @@ ul{
 	width: 66.666666%;
 	float: right;
 	background: url(../img/reason_one.jpg) no-repeat center;
-	-webkit-background-size: cover;
 	background-size: cover;
 }
 
@@ -211,7 +203,6 @@ ul{
 	width: 66.666666%;
 	float: left;
 	background: url(../img/reason_two.jpg) no-repeat center;
-	-webkit-background-size: cover;
 	background-size: cover;
 }
 
@@ -219,9 +210,7 @@ ul{
 	float: right;
 }
 
-
 /* /end first reason and second reason */ 
-
 
 /* components */
 
@@ -266,9 +255,7 @@ ul{
 	padding: 29px 65px 44px;
 }
 
-
 /* /end five reason section */
-
 
 /* search block */
 
@@ -307,16 +294,22 @@ ul{
 	color: #fff;
 	background-color: #766357;
 	text-decoration: none;
+	z-index: 110;
 }
 
 /* main form */
 
 .main-form{
 	position: absolute;
+	display: none;
 	width: 570px;
 	padding: 55px;
 	background-color: #fff;
 	z-index: 100;
+	-webkit-animation-name: aniform;
+	        animation-name: aniform;
+	-webkit-animation-duration: 2s;
+	        animation-duration: 2s;
 }
 
 .main-form label{
@@ -414,7 +407,8 @@ input[name="child"]{
 	left: 50%;
 	width: 22px;
     height: 22px;
-	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
 	background: url(../img/sprite.png) no-repeat -10px -10px;
 }
 
@@ -442,7 +436,8 @@ input[name="child"]{
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
 	background: url(../img/sprite.png) no-repeat;
 }
 
@@ -474,25 +469,18 @@ input[name="child"]{
 	background-position: -651px -10px;
 }
 
-
 /* /and main form */
-
 /* /end search block */
-
 
 /* map block */
 
 .map-block{
-	height: 592px;
-}
-
-.map-block img{
-	max-width: 100%;
-	height: auto;
+	min-height: 592px;
+	background: #e7e7e7 url(../img/map.jpg) no-repeat;
+	background-size: cover;
 }
 
 /* /end map block */
-
 
 /* main footer */
 
@@ -510,10 +498,9 @@ input[name="child"]{
 .hashtag p{
 	margin: 0;
 	font-size: 21px;
-	line-height: 48px; /* так нельзя, но по-другому не получилось */
+	line-height: 48px;
 	font-weight: bold;
 }
-
 
 .social-btn li{
 	display: inline-block;
@@ -542,7 +529,8 @@ input[name="child"]{
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
 	background: url(../img/sprite.png) no-repeat;
 }
 
@@ -568,7 +556,7 @@ input[name="child"]{
 	display: inline-block;
 	vertical-align: middle;
 	font-size: 14px;
-	line-height: 46px; /* выравнивание с помощью line-height */
+	line-height: 46px;
 }
 
 .copyright .copyright-img{
@@ -587,20 +575,7 @@ input[name="child"]{
 	background: url(../img/sprite.png) no-repeat -962px -10px;
 }
 
-/* index footer */
-
-.index-footer{ /* стили, чтобы футер наезжал на карту */
-	width: 100%;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background-color: rgba(255,255,255,.5);
-}
-
 /* /end main footer */
-
-
 
 
 /* *** hotel page ***  */
@@ -708,7 +683,8 @@ input[name="child"]{
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
 	display: block;
 	width: 2px;
 	height: 22px;
@@ -797,7 +773,6 @@ input[name="max-value"]:focus{
 
 /* /end choice-block */
 
-
 /* result block */
 
 .result-block,
@@ -880,7 +855,8 @@ input[name="max-value"]:focus{
 
 .arrow-block .arrow-down{
 	margin-left: 10px;
-	transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	        transform: rotate(180deg);
 }
 
 .arrow-block .arrow-active{
@@ -933,7 +909,7 @@ input[name="max-value"]:focus{
 	margin: 0;
 	margin-bottom: 12px;
 	font-size: 21px;
-	line-height: 16px; /* здесь я понизил значение, иначе не выравнилось по одной линии с img */
+	line-height: 16px;
 }
 
 .info-text-left,
@@ -1026,6 +1002,66 @@ input[name="max-value"]:focus{
 
 /* ******************* */
 
+/* index footer */
+
+.index-footer{ /* стили, чтобы футер наезжал на карту */
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(255,255,255,.5);
+}
+
+/* style for main-form (js) */
+
 .main-form-toggle{
-	display: none;
+	display: block;
+}
+
+/* style for main-form else not js */
+
+.form-wrapper{
+	padding: 10% 0;
+	background: #e7e7e7 url(../img/bg_form_index.jpg) no-repeat;
+	background-size: cover;
+}
+
+.form-index{
+	position: static;
+	display: block;
+	margin: 0 auto;
+	-webkit-animation: none;
+	        animation: none;
+	border-radius: 15px;
+}
+
+/* animation for form */
+
+@-webkit-keyframes aniform{
+	from { 
+		height: 0; 
+		overflow: hidden;
+		-webkit-transform: translateY(-40px);
+		        transform: translateY(-40px); 
+	}
+
+	to{
+		height: 396px;
+		overflow: hidden;
+	}
+}
+
+@keyframes aniform{
+	from { 
+		height: 0; 
+		overflow: hidden;
+		-webkit-transform: translateY(-40px);
+		        transform: translateY(-40px); 
+	}
+
+	to{
+		height: 396px;
+		overflow: hidden;
+	}
 }
