@@ -616,24 +616,21 @@ input[name="child"]{
 }
 
 .choice-block label{
-	position: relative;
-	padding-left: 40px;
+	display: inline-block;
+	vertical-align: top;
 	font-size: 14px;
-	line-height: 21px;
+	line-height: 23px;
 	color: #fff;
 	cursor: pointer;
 }
 
-.choice-housing label{
-	padding-left: 43px;
-}
-
 .choice-block label::before{
 	content: "";
-	position: absolute;
-	display: block;
+	display: inline-block;
+	vertical-align: top;
 	width: 25px;
 	height: 22px;
+	margin-right: 15px;
 	background: url(../img/sprite.png) no-repeat -179px -10px;
 }
 
