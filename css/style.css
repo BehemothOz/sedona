@@ -312,6 +312,13 @@ ul{
 	        animation-duration: 2s;
 }
 
+.wrap-animation{
+	-webkit-animation-name: wrapaniform;
+	        animation-name: wrapaniform;
+	-webkit-animation-duration: 3s;
+	        animation-duration: 3s;
+}
+
 .main-form label{
 	display: inline-block;
 	vertical-align: top;
@@ -1050,7 +1057,7 @@ input[name="max-value"]:focus{
 }
 
 @keyframes aniform{
-	from { 
+	from{ 
 		height: 0; 
 		overflow: hidden;
 		-webkit-transform: translateY(-40px);
@@ -1060,5 +1067,33 @@ input[name="max-value"]:focus{
 	to{
 		height: 396px;
 		overflow: hidden;
+	}
+}
+
+@-webkit-keyframes wrapaniform{
+	from{
+		opacity: 0;
+	}
+	
+	50%{
+		opacity: 0;
+	}
+
+	to{
+		opacity: 1;
+	}
+}
+
+@keyframes wrapaniform{
+	from{
+		opacity: 0;
+	}
+	
+	50%{
+		opacity: 0;
+	}
+
+	to{
+		opacity: 1;
 	}
 }
