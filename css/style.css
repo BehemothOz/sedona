@@ -369,7 +369,8 @@ ul {
 
 input[name="visit"],
 input[name="departure"] {
-    width: 315px;
+    position: relative;
+    width: 350px;
     padding: 6px 15px;
 }
 
@@ -378,6 +379,17 @@ input[name="child"] {
     width: 38px;
     padding: 6px 0;
     text-align: center;
+}
+
+input[name="visit"]:hover,
+input[name="departure"]:hover{
+    background-color: #ebebeb;
+}
+
+input[name="visit"]:focus,
+input[name="departure"]:focus{
+    background-color: transparent;
+    outline: 1px solid #e5e5e5;
 }
 
 .main-form button {
@@ -404,12 +416,12 @@ input[name="child"] {
 }
 
 .ic-calendar {
-    position: relative;
+    position: absolute;
+    right: 60px;
     display: inline-block;
     vertical-align: top;
     width: 35px;
     height: 38px;
-    background-color: #f2f2f2;
 }
 
 .ic-calendar::after {
