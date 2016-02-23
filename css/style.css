@@ -310,6 +310,7 @@ ul {
     animation-name: aniform;
     -webkit-animation-duration: 2s;
     animation-duration: 2s;
+    box-shadow: 0 0 15px -2px rgba(0,0,0,.4); 
 }
 
 .wrap-animation {
@@ -909,6 +910,7 @@ input[name="max-value"]:focus {
 }
 
 .info-adout-result {
+    max-width: 80%;
     padding-left: 26px;
     font-size: 0;
 }
@@ -918,6 +920,19 @@ input[name="max-value"]:focus {
     margin-bottom: 12px;
     font-size: 21px;
     line-height: 16px;
+}
+
+.info-title a {
+    color: #000;
+    text-decoration: none;
+}
+
+.info-title a:hover {
+    color: #81b3d2;
+}
+
+.info-title a:active {
+    color: #cacaca;
 }
 
 .info-text-left,

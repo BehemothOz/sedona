@@ -1,13 +1,13 @@
 ﻿<!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="utf-8">
-        <title>HTML Academy: Седона</title>
-        <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/style.min.css">
-    </head>
-  	<body>
+	<head>
+		<meta charset="utf-8">
+		<title>HTML Academy: Седона</title>
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
 		<div class="container">
 			<!-- main header -->
 			<header class="main-header">
@@ -16,8 +16,8 @@
 				</div>
 				<nav class="main-navigation">
 					<ul>
-					    <li><a href="#">Информация</a></li>
-					    <li><a href="#">Фото и видео</a></li>
+					 	<li><a href="#">Информация</a></li>
+					 	<li><a href="#">Фото и видео</a></li>
 						<li><a href="#">Карта Штата</a></li>
 						<li><a href="hotels.html">Гостиницы</a></li>
 					</ul>
@@ -142,9 +142,7 @@
 			</section>
 			
 			<!-- map -->
-			<section class="map-block">
-				<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=KlJgcH4j9hagGwGPVV970GncSX3AtgBR&width=100%&height=592&lang=ru_RU&sourceType=constructor"></script>
-			</section>
+			<section class="map-block" id="yandex-map"></section>
 						
 			<!-- main footer -->
 			<footer class="main-footer index-footer">
@@ -168,5 +166,6 @@
 		</div>
 	
 	<script src="js/popup-form.min.js" type="text/javascript"></script>
+	<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=KlJgcH4j9hagGwGPVV970GncSX3AtgBR&height=592&id=yandex-map&lang=ru_RU&sourceType=constructor"></script>
 	</body>
 </html>
