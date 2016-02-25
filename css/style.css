@@ -59,17 +59,17 @@ ul {
     font-weight: bold;
 }
 
-.main-navigation li:first-of-type,
-.main-navigation li:nth-of-type(2) {
+.main-navigation li:nth-of-type(4n+1),
+.main-navigation li:nth-of-type(4n+2) {
     text-align: left;
 }
 
-.main-navigation li:last-of-type,
-.main-navigation li:nth-of-type(3) {
+.main-navigation li:nth-of-type(4n+4),
+.main-navigation li:nth-of-type(4n+3) {
     text-align: right;
 }
 
-.main-navigation li:nth-of-type(2) {
+.main-navigation li:nth-of-type(4n+2) {
     margin-right: 8%;
 }
 
@@ -660,6 +660,14 @@ input[name="departure"]:focus{
 
 .choice-block input[type="checkbox"]:checked ~ label::before {
     background: url(../img/sprite.png) no-repeat -133px -10px;
+}
+
+.choice-block input[type="checkbox"]:disabled ~ label::before {
+    background: url(../img/sprite_dis.png) no-repeat -10px -10px;
+}
+
+.choice-block input[type="checkbox"]:disabled:checked ~ label::before {
+    background: url(../img/sprite_dis.png) no-repeat -52px -10px;
 }
 
 .choice-block input[type="checkbox"] {
